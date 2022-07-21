@@ -13,10 +13,16 @@ function App() {
     });
   };
 
+  const clickHandler = (todoId: string) => {
+    setTodos((prev) => {
+      return prev.filter((item) => item.id !== todoId);
+    });
+  };
+
   return (
     <div>
       <NewTodo onAddTodo={addTodosHandler} />
-      <Todos items={todos} />
+      <Todos items={todos} onClick={clickHandler} />
     </div>
   );
 }

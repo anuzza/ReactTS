@@ -4,3 +4,7 @@
   padding: 1rem;
   background-color: #f7f5ef;
 }
+
+.item:hover {
+  background-color: rgb(216, 140, 140);
+}
